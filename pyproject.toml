@@ -1,0 +1,19 @@
+[project]
+name = "tb2-claude-bench"
+version = "0.1.0"
+description = "Harbor-backed queue runner for Terminal-Bench 2.0 Claude Code sweeps"
+requires-python = ">=3.11"
+dependencies = [
+  "harbor>=0.1.0",
+  "python-dotenv>=1.0.0",
+  "rich>=13.0.0",
+]
+
+[project.scripts]
+tb2-queue = "tb2_claude_bench.queue:main"
+
+[tool.ruff]
+line-length = 100
+
+[tool.setuptools.packages.find]
+include = ["tb2_claude_bench*"]
