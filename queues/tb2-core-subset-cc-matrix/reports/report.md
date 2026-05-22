@@ -5,22 +5,22 @@ Dataset: `/root/tb2-claude-bench/data/terminal-bench-2`
 
 # TB2 Queue Summary
 
-Updated: `2026-05-22T20:08:23+00:00`
+Updated: `2026-05-22T23:32:15+00:00`
 
 | Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 65/84 | 31 | 34 | 0.477 | 1588 | 75714071 | 912539 | 76628198 | 29.313121 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 65/84 | 32 | 33 | 0.492 | 118943249 | 115992126 | 1052329 | 235987704 | 44.983659 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 65/84 | 34 | 31 | 0.523 | 75251000 | 72172941 | 153277 | 147577218 | 33.623635 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 65/84 | 27 | 38 | 0.415 | 91008960 | 84878039 | 735849 | 176622848 | 46.376713 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 64/84 | 29 | 35 | 0.453 | 43424086 | 40099189 | 41553 | 83564828 | 50.003634 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 64/84 | 30 | 34 | 0.469 | 50688624 | 47312557 | 44690 | 98045871 | 53.905709 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 64/84 | 24 | 40 | 0.375 | 41365933 | 38880953 | 1890764 | 82137650 | 32.137807 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 64/84 | 33 | 31 | 0.516 | 39186943 | 36523510 | 1846167 | 77556620 | 24.358575 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 64/84 | 32 | 32 | 0.500 | 39718535 | 37338926 | 1715062 | 78772523 | 29.639343 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 64/84 | 32 | 32 | 0.500 | 44470118 | 41657151 | 1890410 | 88017679 | 25.901842 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 64/84 | 31 | 33 | 0.484 | 36036983 | 33979439 | 1540104 | 71556526 | 26.446474 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 64/84 | 31 | 33 | 0.484 | 36527893 | 33599435 | 2001533 | 72128861 | 24.319057 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 72/84 | 32 | 40 | 0.444 | 1856 | 97352746 | 1133072 | 98487674 | 42.233661 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 72/84 | 34 | 38 | 0.472 | 146266582 | 142690040 | 1337115 | 290293737 | 49.716896 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 72/84 | 37 | 35 | 0.514 | 86355633 | 82718690 | 174011 | 169248334 | 42.014310 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 72/84 | 28 | 44 | 0.389 | 100578408 | 93682955 | 845220 | 195106583 | 53.177496 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 72/84 | 32 | 40 | 0.444 | 48255327 | 44564807 | 46317 | 92866451 | 55.646835 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 72/84 | 33 | 39 | 0.458 | 54177854 | 50480639 | 48834 | 104707327 | 62.310181 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 72/84 | 26 | 46 | 0.361 | 44153817 | 41422344 | 2154711 | 87730872 | 37.996755 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 72/84 | 36 | 36 | 0.500 | 42997082 | 40007102 | 2157904 | 85162088 | 31.041405 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 72/84 | 34 | 38 | 0.472 | 41434029 | 38875945 | 1958122 | 82268096 | 34.426171 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 72/84 | 34 | 38 | 0.472 | 47114548 | 44004313 | 2187567 | 93306428 | 32.040221 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 72/84 | 33 | 39 | 0.458 | 39221387 | 36922722 | 1791882 | 77935991 | 30.776442 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 72/84 | 33 | 39 | 0.458 | 39803014 | 36575602 | 2321423 | 78700039 | 30.926428 |
 
 ## Jobs
 
@@ -798,105 +798,105 @@ Updated: `2026-05-22T20:08:23+00:00`
 | completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 |  |  |  |  |  |  |
 | completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 |  |  |  |  |  |  |
 | completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 |  |  |  |  |  |  |
-| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 |  |  |  |  |  |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 | 12 | 223197 | 2498 | 225707 | 0.181417 |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 | 599405 | 572502 | 5313 | 1177220 | 0.352309 |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 1.0 | 195688 | 175041 | 289 | 371018 | 0.181095 |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 | 366140 | 308804 | 1855 | 676799 | 0.420194 |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 366925 | 324258 | 233 | 691416 |  |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 1.0 | 105505 | 96404 | 223 | 202132 |  |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 | 320621 | 305884 | 7124 | 633629 | 0.289459 |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 1.0 | 230016 | 213244 | 9015 | 452275 |  |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 | 186656 | 174664 | 4935 | 366255 |  |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 | 78400 | 68949 | 5338 | 152687 |  |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 | 397363 | 363455 | 7847 | 768665 | 0.302881 |  |
+| completed | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 | 126696 | 114098 | 8138 | 248932 |  |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 | 52 | 2848841 | 56182 | 2905075 | 2.124414 |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 | 768653 | 723789 | 23466 | 1515908 | 0.737345 |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 | 1485807 | 1418540 | 2647 | 2906994 | 1.229750 |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 | 2006704 | 1894158 | 34564 | 3935426 |  |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 0.0 | 631392 | 563778 | 435 | 1195605 |  |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 | 769919 | 707651 | 995 | 1478565 |  |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 | 460144 | 424550 | 22208 | 906902 | 0.593947 |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 | 474628 | 430489 | 31664 | 936781 | 0.769609 |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 | 492572 | 454267 | 25393 | 972232 | 0.660805 |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 | 718909 | 646534 | 51918 | 1417361 | 1.244117 |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 | 1088762 | 1017198 | 52116 | 2158076 |  |  |
+| completed | raman-fitting | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 | 508673 | 443797 | 40441 | 992911 | 0.983022 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 | 179 | 17956806 | 153215 | 18110200 | 9.376270 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 | 19961180 | 19665506 | 206034 | 39832720 |  |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 | 7093055 | 6862673 | 5623 | 13961351 | 5.001812 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 | 5006058 | 4751791 | 58567 | 9816416 | 4.459633 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 0.0 | 88494 | 39616 | 1597 | 129707 |  |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 | 117831 | 43958 | 110 | 161899 | 4.071696 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 | 141877 | 69583 | 169392 | 380852 | 2.832846 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 | 39621 | 5333 | 160106 | 205060 | 2.531759 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 | 104817 | 69549 | 160151 | 334517 | 2.555373 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 | 51923 | 3220 | 168276 | 223419 | 2.707731 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 | 70782 | 47652 | 128000 | 246434 | 2.021025 |  |
+| completed | regex-chess | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 | 19345 | 4251 | 160156 | 183752 | 2.460207 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 1.0 | 6 | 90319 | 2829 | 93154 | 0.139670 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 1.0 | 2143764 | 2098117 | 29971 | 4271852 | 1.250128 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 1.0 | 96995 | 79181 | 55 | 176231 | 0.126132 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 | 104214 | 46271 | 2988 | 153473 | 0.328779 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 55600 | 37900 | 9 | 93509 | 0.557546 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 1.0 | 87071 | 63691 | 69 | 150831 | 0.743467 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 1.0 | 90320 | 57807 | 21881 | 170008 | 0.467478 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 1.0 | 186322 | 149397 | 25985 | 361704 | 0.573057 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 1.0 | 82506 | 59134 | 17941 | 159581 | 0.374497 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 1.0 | 102015 | 75236 | 23874 | 201125 | 0.481098 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 1.0 | 93015 | 66446 | 20914 | 180375 | 0.433275 |  |
+| completed | regex-log | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 1.0 | 178691 | 140309 | 33899 | 352899 | 0.694505 |  |
+| running | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 1.0 | 2087629 | 2001153 | 9042 | 4097824 | 1.059626 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 1.0 | 840384 | 765992 | 5574 | 1611950 | 0.702401 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 1.0 | 916072 | 813423 | 6520 | 1736015 | 0.669452 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 1155440 | 1076398 | 935 | 2232773 | 2.039040 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 1.0 | 1371354 | 1326102 | 1346 | 2698802 | 1.752629 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 1.0 | 1036959 | 993354 | 29280 | 2059593 | 0.975540 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 1.0 | 1226906 | 1162385 | 41871 | 2431162 | 1.218713 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 1.0 | 405004 | 375894 | 21577 | 802475 | 0.593284 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 1.0 | 582278 | 547594 | 23362 | 1153234 | 0.643261 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 1.0 | 763077 | 724924 | 25622 | 1513623 | 0.854796 |  |
+| completed | reshard-c4-data | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 1.0 | 970027 | 919426 | 33066 | 1922519 | 0.961523 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 | 5 | 79764 | 2363 | 82132 | 0.188944 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 | 351202 | 314793 | 5001 | 670996 | 0.392515 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 | 232113 | 189677 | 6206 | 427996 | 0.367720 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 | 298699 | 225031 | 2455 | 526185 | 0.356950 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 0.0 | 1886471 | 1814443 | 1284 | 3702198 | 2.292366 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 | 369340 | 342277 | 948 | 712565 | 0.737772 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 | 586720 | 558668 | 11189 | 1156577 | 0.440613 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 | 1007737 | 941949 | 36107 | 1985793 | 1.070285 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 | 155335 | 136271 | 9258 | 300864 | 0.250650 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 | 292342 | 257095 | 17089 | 566526 | 0.465623 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 | 604170 | 572867 | 14663 | 1191700 | 0.509174 |  |
+| completed | sam-cell-seg | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 | 991933 | 930421 | 37635 | 1959989 | 1.074294 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 | 8 | 279770 | 2435 | 282213 | 0.708977 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 | 1411500 | 1322054 | 5959 | 2739513 | 0.941313 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 | 1160591 | 1054645 | 340 | 2215576 | 0.781765 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 | 871561 | 765438 | 2422 | 1639421 | 0.565776 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 0.0 | 646919 | 609225 | 271 | 1256415 | 0.754248 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 | 668210 | 587999 | 453 | 1256662 | 1.098908 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 | 151243 | 131545 | 2873 | 285661 | 0.259065 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 | 644909 | 580795 | 6989 | 1232693 | 0.519408 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 | 288604 | 267240 | 3805 | 559649 | 0.352218 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 | 818563 | 748534 | 7300 | 1574397 | 0.596549 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 | 167235 | 150741 | 2616 | 320592 | 0.208818 |  |
+| completed | sanitize-git-repo | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 | 479756 | 423865 | 6555 | 910176 | 0.433821 |  |
+| completed | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 | 6 | 159978 | 1011 | 160995 | 0.200849 |  |
+| running | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
+| running | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
+| running | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
+| running | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
+| running | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
+| running | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
 | queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
 | queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
 | queued | schemelike-metacircular-eval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
