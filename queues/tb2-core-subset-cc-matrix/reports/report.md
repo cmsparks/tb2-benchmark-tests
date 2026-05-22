@@ -5,18 +5,18 @@ Dataset: `/root/tb2-claude-bench/data/terminal-bench-2`
 
 # TB2 Queue Summary
 
-Updated: `2026-05-22T04:54:18+00:00`
+Updated: `2026-05-22T05:09:52+00:00`
 
 | Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 11/84 | 6 | 5 | 0.545 | 242 | 11046975 | 115954 | 11163171 | 6.243848 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 11/84 | 4 | 7 | 0.364 | 11756402 | 11403307 | 124192 | 23283901 | 5.484689 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 11/84 | 7 | 4 | 0.636 | 15252003 | 14752593 | 20340 | 30024936 | 7.607559 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 11/84 | 4 | 7 | 0.364 | 14682422 | 13608317 | 136553 | 28427292 | 12.383353 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 13/84 | 8 | 5 | 0.615 | 321 | 12921131 | 125947 | 13047399 | 7.477812 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 13/84 | 5 | 8 | 0.385 | 25042577 | 24605738 | 166015 | 49814330 | 10.386578 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 12/84 | 7 | 5 | 0.583 | 16837849 | 16263607 | 23355 | 33124811 | 7.607559 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 12/84 | 4 | 8 | 0.333 | 17142537 | 16014570 | 142433 | 33299540 | 12.383353 |
 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 12/84 | 5 | 7 | 0.417 | 10464194 | 9788168 | 9678 | 20262040 | 12.084320 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 11/84 | 5 | 6 | 0.455 | 7357168 | 6951963 | 8615 | 14317746 | 14.580818 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 11/84 | 4 | 7 | 0.364 | 3753382 | 3441363 | 354347 | 7549092 | 6.252179 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 11/84 | 6 | 5 | 0.545 | 6822387 | 6461625 | 320816 | 13604828 | 6.737258 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 12/84 | 5 | 7 | 0.417 | 7946441 | 7474991 | 10042 | 15431474 | 14.580818 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 12/84 | 4 | 8 | 0.333 | 4626208 | 4248866 | 363741 | 9238815 | 6.252179 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 12/84 | 7 | 5 | 0.583 | 8200682 | 7797976 | 339776 | 16338434 | 7.579806 |
 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 11/84 | 4 | 7 | 0.364 | 3736334 | 3501892 | 345507 | 7583733 | 4.227299 |
 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 11/84 | 5 | 6 | 0.455 | 4544115 | 4283965 | 330742 | 9158822 | 5.215209 |
 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 11/84 | 5 | 6 | 0.455 | 5130847 | 4812989 | 336966 | 10280802 | 5.616283 |
@@ -158,23 +158,23 @@ Updated: `2026-05-22T04:54:18+00:00`
 | completed | code-from-image | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 1.0 | 8011 | 5591 | 877 | 14479 | 0.023904 |  |
 | completed | code-from-image | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 1.0 | 54730 | 47522 | 765 | 103017 | 0.052759 |  |
 | completed | code-from-image | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 1.0 | 8048 | 5537 | 1001 | 14586 | 0.026089 |  |
-| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
+| completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 1.0 | 60 | 1570295 | 7972 | 1578327 | 1.048091 |  |
+| completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 1.0 | 13009466 | 12942735 | 39479 | 25991680 | 4.725035 |  |
+| completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 | 1585846 | 1511014 | 3015 | 3099875 |  |  |
+| completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 | 2460115 | 2406253 | 5880 | 4872248 |  |  |
 | completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 1502949 | 1406236 | 1593 | 2910778 | 1.543989 |  |
-| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
+| completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 | 589273 | 523028 | 1427 | 1113728 |  |  |
+| completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 | 872826 | 807503 | 9394 | 1689723 |  |  |
+| completed | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 1.0 | 1378295 | 1336351 | 18960 | 2733606 | 0.842548 |  |
+| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
+| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
+| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
+| running | compile-compcert | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
+| completed | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 1.0 | 19 | 303861 | 2021 | 305901 | 0.185873 |  |
+| completed | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 | 276709 | 259696 | 2344 | 538749 | 0.176853 |  |
+| running | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
+| running | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
+| running | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
 | queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
 | queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
 | queued | configure-git-webserver | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
