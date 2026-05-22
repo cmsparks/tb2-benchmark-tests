@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "accuracy": 1.0,
+      "agent": "versioned-claude-code",
+      "completed": 1,
+      "cost_usd": 0.051614999999999994,
+      "failed": 0,
+      "mode": "simple-abbrev",
+      "model": "anthropic/claude-sonnet-4-6",
+      "n_cache_tokens": 16152,
+      "n_input_tokens": 21825,
+      "n_output_tokens": 130,
+      "n_total_tokens": 38107,
+      "passed": 1,
+      "queued": 0,
+      "running": 0,
+      "status_failed": 0,
+      "total": 1,
+      "version": "2.1.48"
+    },
+    {
+      "accuracy": 1.0,
+      "agent": "versioned-claude-code",
+      "completed": 1,
+      "cost_usd": 0.012581549999999999,
+      "failed": 0,
+      "mode": "simple-abbrev",
+      "model": "anthropic/claude-sonnet-4-6",
+      "n_cache_tokens": 4011,
+      "n_input_tokens": 6174,
+      "n_output_tokens": 218,
+      "n_total_tokens": 10403,
+      "passed": 1,
+      "queued": 0,
+      "running": 0,
+      "status_failed": 0,
+      "total": 1,
+      "version": "2.1.116"
+    },
+    {
+      "accuracy": 1.0,
+      "agent": "versioned-claude-code",
+      "completed": 1,
+      "cost_usd": 0.0124434,
+      "failed": 0,
+      "mode": "simple-abbrev",
+      "model": "anthropic/claude-sonnet-4-6",
+      "n_cache_tokens": 3963,
+      "n_input_tokens": 6101,
+      "n_output_tokens": 216,
+      "n_total_tokens": 10280,
+      "passed": 1,
+      "queued": 0,
+      "running": 0,
+      "status_failed": 0,
+      "total": 1,
+      "version": "2.1.145"
+    }
+  ],
+  "updated_at": "2026-05-22T19:26:59+00:00"
+}
