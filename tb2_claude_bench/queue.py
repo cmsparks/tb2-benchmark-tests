@@ -671,13 +671,22 @@ def add_numeric(target: dict[str, Any], source: dict[str, Any], key: str) -> Non
         target[key] += value
 
 
-def aggregate_key(group: dict[str, Any]) -> tuple[str, str, str, str]:
+def aggregate_key(group: dict[str, Any]) -> tuple[str, str, tuple[Any, ...], str]:
     return (
         str(group.get("agent") or ""),
         str(group.get("model") or ""),
-        str(group.get("version") or ""),
+        semver_key(str(group.get("version") or "")),
         str(group.get("mode") or ""),
     )
+
+
+def semver_key(value: str) -> tuple[Any, ...]:
+    match = re.match(r"^v?(?P<core>\d+(?:\.\d+)*)(?P<suffix>.*)$", value)
+    if not match:
+        return (1, value)
+    parts = tuple(int(part) for part in match.group("core").split("."))
+    suffix = match.group("suffix") or ""
+    return (0, parts, suffix)
 
 
 def render_summary_markdown(summary: dict[str, Any]) -> str:

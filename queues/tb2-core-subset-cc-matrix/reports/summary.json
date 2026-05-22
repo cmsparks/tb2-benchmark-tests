@@ -93,7 +93,7 @@
       "running": 0,
       "status_failed": 0,
       "total": 84,
-      "version": "2.1.115"
+      "version": "2.1.48"
     },
     {
       "accuracy": null,
@@ -112,7 +112,45 @@
       "running": 0,
       "status_failed": 0,
       "total": 84,
-      "version": "2.1.115"
+      "version": "2.1.48"
+    },
+    {
+      "accuracy": null,
+      "agent": "versioned-claude-code",
+      "completed": 0,
+      "cost_usd": 0.0,
+      "failed": 0,
+      "mode": "regular",
+      "model": "anthropic/claude-sonnet-4-6",
+      "n_cache_tokens": 0,
+      "n_input_tokens": 0,
+      "n_output_tokens": 0,
+      "n_total_tokens": 0,
+      "passed": 0,
+      "queued": 84,
+      "running": 0,
+      "status_failed": 0,
+      "total": 84,
+      "version": "2.1.113"
+    },
+    {
+      "accuracy": null,
+      "agent": "versioned-claude-code",
+      "completed": 0,
+      "cost_usd": 0.0,
+      "failed": 0,
+      "mode": "simple",
+      "model": "anthropic/claude-sonnet-4-6",
+      "n_cache_tokens": 0,
+      "n_input_tokens": 0,
+      "n_output_tokens": 0,
+      "n_total_tokens": 0,
+      "passed": 0,
+      "queued": 84,
+      "running": 0,
+      "status_failed": 0,
+      "total": 84,
+      "version": "2.1.113"
     },
     {
       "accuracy": null,
@@ -189,45 +227,7 @@
       "status_failed": 0,
       "total": 84,
       "version": "2.1.145"
-    },
-    {
-      "accuracy": null,
-      "agent": "versioned-claude-code",
-      "completed": 0,
-      "cost_usd": 0.0,
-      "failed": 0,
-      "mode": "regular",
-      "model": "anthropic/claude-sonnet-4-6",
-      "n_cache_tokens": 0,
-      "n_input_tokens": 0,
-      "n_output_tokens": 0,
-      "n_total_tokens": 0,
-      "passed": 0,
-      "queued": 84,
-      "running": 0,
-      "status_failed": 0,
-      "total": 84,
-      "version": "2.1.48"
-    },
-    {
-      "accuracy": null,
-      "agent": "versioned-claude-code",
-      "completed": 0,
-      "cost_usd": 0.0,
-      "failed": 0,
-      "mode": "simple",
-      "model": "anthropic/claude-sonnet-4-6",
-      "n_cache_tokens": 0,
-      "n_input_tokens": 0,
-      "n_output_tokens": 0,
-      "n_total_tokens": 0,
-      "passed": 0,
-      "queued": 84,
-      "running": 0,
-      "status_failed": 0,
-      "total": 84,
-      "version": "2.1.48"
     }
   ],
-  "updated_at": "2026-05-22T00:22:32+00:00"
+  "updated_at": "2026-05-22T00:32:38+00:00"
 }
