@@ -1,0 +1,60 @@
+{
+  "aggregated_weighted_ols": {
+    "intercept": 0.5147043300187896,
+    "slope_pass_rate_per_tool": -0.0012491115474204913,
+    "weighted_r2": 0.06848084374847763
+  },
+  "logistic": {
+    "intercept": 0.05883308255787724,
+    "likelihood_ratio_chi2": 0.22175395157569255,
+    "likelihood_ratio_p": 0.6377067327814214,
+    "log_likelihood_model": -299.3240753790766,
+    "log_likelihood_null": -299.43495235486444,
+    "mcfadden_pseudo_r2": 0.0003702873526149064,
+    "odds_ratio_per_additional_tool": 0.995014485986151,
+    "slope_per_tool": -0.004997983149471031,
+    "slope_wald_p": 0.6377782156183596,
+    "slope_wald_z": -0.4708074896005334
+  },
+  "n_failed": 217,
+  "n_jobs": 432,
+  "n_passed": 215,
+  "overall_pass_rate": 0.4976851851851852,
+  "tool_counts": [
+    {
+      "failed": 79,
+      "n": 162,
+      "passed": 83,
+      "rate": 0.5123456790123457,
+      "tool_count": 3
+    },
+    {
+      "failed": 23,
+      "n": 54,
+      "passed": 31,
+      "rate": 0.5740740740740741,
+      "tool_count": 15
+    },
+    {
+      "failed": 61,
+      "n": 108,
+      "passed": 47,
+      "rate": 0.4351851851851852,
+      "tool_count": 17
+    },
+    {
+      "failed": 26,
+      "n": 54,
+      "passed": 28,
+      "rate": 0.5185185185185185,
+      "tool_count": 23
+    },
+    {
+      "failed": 28,
+      "n": 54,
+      "passed": 26,
+      "rate": 0.48148148148148145,
+      "tool_count": 28
+    }
+  ]
+}
