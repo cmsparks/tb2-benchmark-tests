@@ -1,18 +1,18 @@
 # TB2 Queue Summary
 
-Updated: `2026-05-22T07:30:47+00:00`
+Updated: `2026-05-22T08:06:43+00:00`
 
 | Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 20/84 | 11 | 9 | 0.550 | 485 | 18997104 | 281491 | 19279080 | 9.488768 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 20/84 | 8 | 12 | 0.400 | 30954004 | 30209442 | 298710 | 61462156 | 13.687168 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 20/84 | 11 | 9 | 0.550 | 26833070 | 25829881 | 56057 | 52719008 | 15.298609 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 20/84 | 7 | 13 | 0.350 | 27277926 | 25401154 | 289155 | 52968235 | 20.137453 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 19/84 | 10 | 9 | 0.526 | 12958122 | 12002958 | 13259 | 24974339 | 18.337322 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 20/84 | 9 | 11 | 0.450 | 11313481 | 10556394 | 14931 | 21884806 | 21.693645 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 19/84 | 6 | 13 | 0.316 | 9599506 | 8906720 | 688664 | 19194890 | 10.753899 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 19/84 | 13 | 6 | 0.684 | 9638909 | 9045559 | 621957 | 19306425 | 11.362326 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 18/84 | 10 | 8 | 0.556 | 7363452 | 6957853 | 497917 | 14819222 | 8.225948 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 18/84 | 11 | 7 | 0.611 | 8834571 | 8312694 | 545182 | 17692447 | 9.144744 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 18/84 | 10 | 8 | 0.556 | 8310154 | 7789999 | 450945 | 16551098 | 8.985198 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 18/84 | 12 | 6 | 0.667 | 8757731 | 8212460 | 589687 | 17559878 | 9.206524 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 23/84 | 12 | 11 | 0.522 | 525 | 19971707 | 312679 | 20284911 | 10.506845 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 23/84 | 10 | 13 | 0.435 | 32754581 | 31912694 | 343601 | 65010876 | 15.411140 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 23/84 | 12 | 11 | 0.522 | 27181014 | 26117103 | 56677 | 53354794 | 15.531362 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 22/84 | 8 | 14 | 0.364 | 27654440 | 25680915 | 290403 | 53625758 | 20.796256 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 22/84 | 11 | 11 | 0.500 | 14344497 | 13273608 | 14361 | 27632466 | 21.834150 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 21/84 | 10 | 11 | 0.476 | 11659810 | 10869836 | 15309 | 22544955 | 22.619346 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 21/84 | 6 | 15 | 0.286 | 10236665 | 9487272 | 726354 | 20450291 | 11.705673 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 21/84 | 13 | 8 | 0.619 | 10559533 | 9886555 | 670077 | 21116165 | 12.635000 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 22/84 | 12 | 10 | 0.545 | 9897969 | 9319516 | 678298 | 19895783 | 11.406173 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 21/84 | 12 | 9 | 0.571 | 9243633 | 8651241 | 675474 | 18570348 | 9.948649 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 22/84 | 12 | 10 | 0.545 | 9384381 | 8756374 | 581140 | 18721895 | 10.045538 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 21/84 | 13 | 8 | 0.619 | 10026831 | 9204977 | 715318 | 19947126 | 12.425895 |
