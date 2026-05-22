@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "accuracy": 0.9438202247191011,
+      "agent": "oracle",
+      "completed": 89,
+      "failed": 5,
+      "mode": "oracle",
+      "model": null,
+      "passed": 84,
+      "queued": 0,
+      "running": 0,
+      "status_failed": 0,
+      "total": 89,
+      "version": "oracle"
+    }
+  ],
+  "updated_at": "2026-05-21T23:44:05+00:00"
+}

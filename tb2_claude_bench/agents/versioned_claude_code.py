@@ -42,13 +42,27 @@ class VersionedClaudeCode(ClaudeCode):
             environment,
             command=(
                 "if command -v apk >/dev/null 2>&1; then "
-                "apk add --no-cache curl bash nodejs npm util-linux; "
+                "apk add --no-cache curl bash nodejs npm util-linux sudo shadow; "
                 "elif command -v apt-get >/dev/null 2>&1; then "
                 "apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y "
-                "ca-certificates curl nodejs npm util-linux; "
+                "ca-certificates curl nodejs npm util-linux sudo; "
                 "elif command -v yum >/dev/null 2>&1; then "
-                "yum install -y curl nodejs npm util-linux; "
-                "else echo 'Warning: no known package manager found' >&2; fi"
+                "yum install -y curl nodejs npm util-linux sudo shadow-utils; "
+                "else echo 'Warning: no known package manager found' >&2; fi; "
+                "if ! id claude-agent >/dev/null 2>&1; then "
+                "useradd -m -s /bin/bash claude-agent 2>/dev/null || "
+                "adduser -D -s /bin/bash claude-agent 2>/dev/null || true; "
+                "fi; "
+                "for group in root sudo wheel; do "
+                "if getent group \"$group\" >/dev/null 2>&1 && command -v usermod >/dev/null 2>&1; then "
+                "usermod -aG \"$group\" claude-agent 2>/dev/null || true; "
+                "fi; "
+                "done; "
+                "if command -v sudo >/dev/null 2>&1; then "
+                "mkdir -p /etc/sudoers.d; "
+                "printf 'claude-agent ALL=(ALL) NOPASSWD:ALL\\n' > /etc/sudoers.d/claude-agent; "
+                "chmod 0440 /etc/sudoers.d/claude-agent; "
+                "fi"
             ),
             env={"DEBIAN_FRONTEND": "noninteractive"},
         )
@@ -178,7 +192,18 @@ def _runner_command(
     escaped_cli_flags_json: str,
 ) -> str:
     return f"""set -uo pipefail
-mkdir -p /logs/agent/messages "$CLAUDE_CONFIG_DIR"
+mkdir -p /app /logs/agent/messages "$CLAUDE_CONFIG_DIR"
+if ! id claude-agent >/dev/null 2>&1; then
+  useradd -m -s /bin/bash claude-agent >/dev/null 2>&1 || adduser -D -s /bin/bash claude-agent >/dev/null 2>&1 || true
+fi
+for group in root sudo wheel; do
+  if getent group "$group" >/dev/null 2>&1 && command -v usermod >/dev/null 2>&1; then
+    usermod -aG "$group" claude-agent >/dev/null 2>&1 || true
+  fi
+done
+mkdir -p /home/claude-agent
+chown claude-agent /home/claude-agent 2>/dev/null || true
+chmod -R a+rwX /app /logs/agent "$CLAUDE_CONFIG_DIR" /home/claude-agent 2>/dev/null || true
 VERSION={escaped_version}
 export VERSION
 CLI_FLAGS_JSON={escaped_cli_flags_json}
@@ -204,6 +229,8 @@ for (const configPath of configPaths) {{
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
 }}
 EOF
+chown -R claude-agent /app /logs/agent "$CLAUDE_CONFIG_DIR" /home/claude-agent 2>/dev/null || true
+chmod -R a+rwX /app /logs/agent "$CLAUDE_CONFIG_DIR" /home/claude-agent 2>/dev/null || true
 
 HELP="$(claude --help 2>&1 || true)"
 printf '%s\n' "$HELP" > /logs/agent/claude-help.txt
@@ -241,7 +268,7 @@ const help = process.argv[3] || "";
 function emit(flag, value) {{
   if (value === undefined || value === null || value === "") return;
   if (!help.includes(flag)) return;
-  console.log(`EXTRA_ARGS+=(${JSON.stringify(flag)} ${JSON.stringify(String(value))})`);
+  console.log(`EXTRA_ARGS+=(${{JSON.stringify(flag)}} ${{JSON.stringify(String(value))}})`);
 }}
 emit("--max-turns", flags.max_turns);
 emit("--thinking", flags.thinking);
@@ -261,7 +288,19 @@ EOF
 
 INSTRUCTION={escaped_instruction}
 CLAUDE_CMD=(claude "${{OUTPUT_ARGS[@]}}" "${{PERMISSION_ARGS[@]}}" "${{MODEL_ARGS[@]}}" "${{EFFORT_ARGS[@]}}" "${{EXTRA_ARGS[@]}}" -p "$INSTRUCTION")
-"${{CLAUDE_CMD[@]}}" \\
+if [ "$(id -u)" = "0" ] && command -v setpriv >/dev/null 2>&1 && id claude-agent >/dev/null 2>&1; then
+  CAP_ARGS=()
+  CAP_BOUNDS="$(setpriv --dump 2>/dev/null | awk -F': ' '/Capability bounding set:/ {{print $2}}')"
+  if [ -n "$CAP_BOUNDS" ] && [ "$CAP_BOUNDS" != "[none]" ]; then
+    CAP_PLUS="$(printf '%s' "$CAP_BOUNDS" | tr -d ' ' | sed 's/^/+/' | sed 's/,/,+/g')"
+    CAP_ARGS=(--inh-caps="$CAP_PLUS" --ambient-caps="$CAP_PLUS")
+  fi
+  IS_SANDBOX=1 HOME=/home/claude-agent setpriv --reuid=claude-agent --regid=claude-agent --init-groups "${{CAP_ARGS[@]}}" "${{CLAUDE_CMD[@]}}" \\
+    > >(tee /logs/agent/claude-code.txt /logs/agent/messages/message-001.stdout.jsonl) \\
+    2> >(tee /logs/agent/claude-code.stderr.log /logs/agent/messages/message-001.stderr.log >&2)
+  exit $?
+fi
+IS_SANDBOX=1 HOME="${{HOME:-/home/claude-agent}}" "${{CLAUDE_CMD[@]}}" \\
   > >(tee /logs/agent/claude-code.txt /logs/agent/messages/message-001.stdout.jsonl) \\
   2> >(tee /logs/agent/claude-code.stderr.log /logs/agent/messages/message-001.stderr.log >&2)
 exit $?

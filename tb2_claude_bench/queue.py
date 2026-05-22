@@ -258,13 +258,10 @@ def cmd_enqueue(args: argparse.Namespace) -> int:
 
 def harbor_command(job: dict[str, Any], state: dict[str, Any]) -> list[str]:
     settings = state["settings"]
+    dataset = job["dataset"]
     cmd = [
         settings.get("harbor_command") or default_harbor_command(),
         "run",
-        "-d",
-        job["dataset"],
-        "-i",
-        job["task_name"],
         "--jobs-dir",
         settings["jobs_dir"],
         "--job-name",
@@ -272,6 +269,14 @@ def harbor_command(job: dict[str, Any], state: dict[str, Any]) -> list[str]:
         "--yes",
         "--quiet",
     ]
+    if Path(dataset).exists():
+        cmd.extend(["-p", dataset, "-i", job["task_name"]])
+    else:
+        task_name = job["task_name"]
+        if dataset == DEFAULT_DATASET and not task_name.startswith("terminal-bench/"):
+            task_name = f"terminal-bench/{task_name}"
+        cmd.extend(["-d", dataset, "-i", task_name])
+
     if settings.get("force_build"):
         cmd.append("--force-build")
     else:
@@ -381,21 +386,161 @@ def ingest_harbor_result(job: dict[str, Any]) -> None:
         job["error"] = f"invalid Harbor result.json: {exc}"
         return
 
-    trials = result.get("trial_results") or []
-    trial = trials[0] if trials else result
-    verifier = trial.get("verifier_result") or {}
-    rewards = verifier.get("rewards")
-    reward = extract_reward(rewards)
+    reward = extract_job_reward(result)
+    trial = extract_trial_result(result) or {}
     exception = trial.get("exception_info")
     job["reward"] = reward
     job["passed"] = bool(reward is not None and reward >= 1.0 and not exception)
     job["exception_type"] = (exception or {}).get("exception_type")
     job["exception_message"] = (exception or {}).get("message")
     metrics = trial.get("agent_result") or trial.get("agent_info") or {}
+    usage_metrics = extract_usage_metrics(job, result, trial)
     job["harbor_result_path"] = str(result_path)
     job["harbor_metrics"] = metrics
+    job.update(usage_metrics)
     if exception:
         job["error"] = job["exception_type"] or "Harbor trial exception"
+
+
+def refresh_finished_results(state: dict[str, Any]) -> None:
+    for job in state["jobs"]:
+        if job.get("status") not in {"completed", "failed"} or not job.get("harbor_job_dir"):
+            continue
+        ingest_harbor_result(job)
+
+
+def extract_usage_metrics(
+    job: dict[str, Any], result: dict[str, Any], trial: dict[str, Any]
+) -> dict[str, Any]:
+    stats = result.get("stats") or {}
+    agent_result = trial.get("agent_result") or {}
+    metrics = {
+        "n_input_tokens": first_number(stats, agent_result, key="n_input_tokens"),
+        "n_cache_tokens": first_number(stats, agent_result, key="n_cache_tokens"),
+        "n_output_tokens": first_number(stats, agent_result, key="n_output_tokens"),
+        "cost_usd": first_number(stats, agent_result, key="cost_usd"),
+    }
+    if all(value is not None for value in metrics.values()):
+        metrics["n_total_tokens"] = sum_token_metrics(metrics)
+        return metrics
+
+    jsonl_metrics = extract_claude_jsonl_metrics(job)
+    for key, value in jsonl_metrics.items():
+        if metrics.get(key) is None:
+            metrics[key] = value
+    metrics["n_total_tokens"] = sum_token_metrics(metrics)
+    return metrics
+
+
+def first_number(*objects: dict[str, Any], key: str) -> int | float | None:
+    for obj in objects:
+        value = obj.get(key)
+        if isinstance(value, (int, float)):
+            return value
+    return None
+
+
+def sum_token_metrics(metrics: dict[str, Any]) -> int | None:
+    values = [
+        metrics.get("n_input_tokens"),
+        metrics.get("n_cache_tokens"),
+        metrics.get("n_output_tokens"),
+    ]
+    numeric = [int(value) for value in values if isinstance(value, (int, float))]
+    if not numeric:
+        return None
+    return sum(numeric)
+
+
+def extract_claude_jsonl_metrics(job: dict[str, Any]) -> dict[str, Any]:
+    job_dir = Path(job.get("harbor_job_dir") or "")
+    if not job_dir.exists():
+        return {}
+    metrics: dict[str, Any] = {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": None,
+    }
+    saw_usage = False
+    cost = 0.0
+    saw_cost = False
+    for path in sorted(job_dir.glob("*/agent/messages/*.stdout.jsonl")):
+        for event in iter_json_objects(path.read_text(errors="replace")):
+            usage = event.get("usage")
+            if isinstance(usage, dict):
+                saw_usage = True
+                metrics["n_input_tokens"] += int(usage.get("input_tokens") or 0)
+                metrics["n_output_tokens"] += int(usage.get("output_tokens") or 0)
+                metrics["n_cache_tokens"] += int(usage.get("cache_creation_input_tokens") or 0)
+                metrics["n_cache_tokens"] += int(usage.get("cache_read_input_tokens") or 0)
+            event_cost = event.get("cost_usd")
+            if isinstance(event_cost, (int, float)):
+                saw_cost = True
+                cost += float(event_cost)
+    if not saw_usage:
+        for key in ("n_input_tokens", "n_cache_tokens", "n_output_tokens"):
+            metrics[key] = None
+    if saw_cost:
+        metrics["cost_usd"] = cost
+    return metrics
+
+
+def iter_json_objects(text: str) -> list[dict[str, Any]]:
+    decoder = json.JSONDecoder()
+    objects: list[dict[str, Any]] = []
+    index = 0
+    length = len(text)
+    while index < length:
+        while index < length and text[index].isspace():
+            index += 1
+        if index >= length:
+            break
+        try:
+            value, index = decoder.raw_decode(text, index)
+        except json.JSONDecodeError:
+            next_line = text.find("\n", index)
+            if next_line == -1:
+                break
+            index = next_line + 1
+            continue
+        if isinstance(value, dict):
+            objects.append(value)
+    return objects
+
+
+def extract_job_reward(result: dict[str, Any]) -> float | None:
+    trial = extract_trial_result(result)
+    if trial is not None:
+        reward = extract_reward((trial.get("verifier_result") or {}).get("rewards"))
+        if reward is not None:
+            return reward
+
+    rewards: list[float] = []
+    for eval_result in ((result.get("stats") or {}).get("evals") or {}).values():
+        for metric in eval_result.get("metrics") or []:
+            reward = extract_reward(metric)
+            if reward is not None:
+                rewards.append(reward)
+                break
+        if rewards:
+            continue
+        reward_stats = (eval_result.get("reward_stats") or {}).get("reward") or {}
+        numeric_rewards = [float(value) for value in reward_stats if is_number_string(value)]
+        if len(numeric_rewards) == 1:
+            rewards.append(numeric_rewards[0])
+    if len(rewards) == 1:
+        return rewards[0]
+    return None
+
+
+def extract_trial_result(result: dict[str, Any]) -> dict[str, Any] | None:
+    trials = result.get("trial_results") or []
+    if trials:
+        return trials[0]
+    if "verifier_result" in result or "exception_info" in result:
+        return result
+    return None
 
 
 def extract_reward(rewards: Any) -> float | None:
@@ -414,6 +559,14 @@ def extract_reward(rewards: Any) -> float | None:
     return None
 
 
+def is_number_string(value: str) -> bool:
+    try:
+        float(value)
+    except ValueError:
+        return False
+    return True
+
+
 def cmd_status(args: argparse.Namespace) -> int:
     state = load_queue(args.queue_dir.resolve())
     counts: dict[str, int] = {}
@@ -426,6 +579,8 @@ def cmd_status(args: argparse.Namespace) -> int:
 def cmd_report(args: argparse.Namespace) -> int:
     queue_dir = args.queue_dir.resolve()
     state = load_queue(queue_dir)
+    refresh_finished_results(state)
+    save_queue(queue_dir, state)
     write_reports(queue_dir, state)
     print(f"Wrote reports to {state['settings']['reports_dir']}")
     return 0
@@ -477,24 +632,43 @@ def aggregate_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
                 "completed": 0,
                 "passed": 0,
                 "failed": 0,
+                "status_failed": 0,
                 "queued": 0,
                 "running": 0,
+                "n_input_tokens": 0,
+                "n_cache_tokens": 0,
+                "n_output_tokens": 0,
+                "n_total_tokens": 0,
+                "cost_usd": 0.0,
             },
         )
         group["total"] += 1
         status = row["status"]
-        if status in group:
+        if status in {"queued", "running"}:
             group[status] += 1
         if status == "completed":
             group["completed"] += 1
+        elif status == "failed":
+            group["status_failed"] += 1
         if row.get("passed") is True:
             group["passed"] += 1
         elif status in {"completed", "failed"}:
             group["failed"] += 1
+        add_numeric(group, row, "n_input_tokens")
+        add_numeric(group, row, "n_cache_tokens")
+        add_numeric(group, row, "n_output_tokens")
+        add_numeric(group, row, "n_total_tokens")
+        add_numeric(group, row, "cost_usd")
     for group in groups.values():
-        denominator = group["completed"] + group["failed"]
+        denominator = group["completed"] + group["status_failed"]
         group["accuracy"] = (group["passed"] / denominator) if denominator else None
     return {"updated_at": utc_now(), "groups": sorted(groups.values(), key=aggregate_key)}
+
+
+def add_numeric(target: dict[str, Any], source: dict[str, Any], key: str) -> None:
+    value = source.get(key)
+    if isinstance(value, (int, float)):
+        target[key] += value
 
 
 def aggregate_key(group: dict[str, Any]) -> tuple[str, str, str, str]:
@@ -512,27 +686,42 @@ def render_summary_markdown(summary: dict[str, Any]) -> str:
         "",
         f"Updated: `{summary['updated_at']}`",
         "",
-        "| Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Queued | Running |",
-        "|---|---|---:|---|---:|---:|---:|---:|---:|---:|",
+        "| Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |",
+        "|---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for group in summary["groups"]:
         accuracy = "" if group["accuracy"] is None else f"{group['accuracy']:.3f}"
         lines.append(
-            "| {agent} | {model} | {version} | {mode} | {done}/{total} | {passed} | {failed} | {accuracy} | {queued} | {running} |".format(
+            "| {agent} | {model} | {version} | {mode} | {done}/{total} | {passed} | {failed} | {accuracy} | {input_tokens} | {cache_tokens} | {output_tokens} | {total_tokens} | {cost_usd} |".format(
                 agent=group["agent"],
                 model=group.get("model") or "",
                 version=group["version"],
                 mode=group["mode"],
-                done=group["completed"] + group["failed"],
+                done=group["completed"] + group["status_failed"],
                 total=group["total"],
                 passed=group["passed"],
                 failed=group["failed"],
                 accuracy=accuracy,
-                queued=group["queued"],
-                running=group["running"],
+                input_tokens=format_int(group["n_input_tokens"]),
+                cache_tokens=format_int(group["n_cache_tokens"]),
+                output_tokens=format_int(group["n_output_tokens"]),
+                total_tokens=format_int(group["n_total_tokens"]),
+                cost_usd=format_cost(group["cost_usd"]),
             )
         )
     return "\n".join(lines) + "\n"
+
+
+def format_int(value: Any) -> str:
+    if not isinstance(value, (int, float)):
+        return ""
+    return str(int(value))
+
+
+def format_cost(value: Any) -> str:
+    if not isinstance(value, (int, float)):
+        return ""
+    return f"{value:.6f}" if value else "0"
 
 
 def render_full_markdown(
@@ -548,14 +737,14 @@ def render_full_markdown(
         "",
         "## Jobs",
         "",
-        "| Status | Task | Agent | Model | Version | Mode | Reward | Error |",
-        "|---|---|---|---|---:|---|---:|---|",
+        "| Status | Task | Agent | Model | Version | Mode | Reward | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD | Error |",
+        "|---|---|---|---|---:|---|---:|---:|---:|---:|---:|---:|---|",
     ]
     for row in rows:
         reward = "" if row.get("reward") is None else str(row.get("reward"))
         error = (row.get("error") or row.get("exception_type") or "").replace("|", "\\|")
         lines.append(
-            f"| {row['status']} | {row['task_name']} | {row['agent']} | {row.get('model') or ''} | {row['version']} | {row['mode']} | {reward} | {error} |"
+            f"| {row['status']} | {row['task_name']} | {row['agent']} | {row.get('model') or ''} | {row['version']} | {row['mode']} | {reward} | {format_int(row.get('n_input_tokens'))} | {format_int(row.get('n_cache_tokens'))} | {format_int(row.get('n_output_tokens'))} | {format_int(row.get('n_total_tokens'))} | {format_cost(row.get('cost_usd'))} | {error} |"
         )
     return "\n".join(lines) + "\n"
 
