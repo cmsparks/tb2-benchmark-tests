@@ -5,41 +5,41 @@ Dataset: `/root/tb2-claude-bench/data/terminal-bench-2`
 
 # TB2 Queue Summary
 
-Updated: `2026-05-22T19:20:59+00:00`
+Updated: `2026-05-22T19:59:42+00:00`
 
 | Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 0/84 | 0 | 0 |  | 0 | 0 | 0 | 0 | 0 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 0/84 | 0 | 0 |  | 0 | 0 | 0 | 0 | 0 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 0/84 | 0 | 0 |  | 0 | 0 | 0 | 0 | 0 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 6/84 | 2 | 4 | 0.333 | 2821699 | 2727216 | 3529 | 5552444 | 3.210955 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 6/84 | 2 | 4 | 0.333 | 4545744 | 4402636 | 79292 | 9027672 | 3.043680 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 6/84 | 2 | 4 | 0.333 | 4117206 | 3980267 | 65071 | 8162544 | 2.678950 |
 
 ## Jobs
 
 | Status | Task | Agent | Model | Version | Mode | Reward | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD | Error |
 |---|---|---|---|---:|---|---:|---:|---:|---:|---:|---:|---|
-| queued | adaptive-rejection-sampler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | adaptive-rejection-sampler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | adaptive-rejection-sampler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | bn-fit-modify | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | bn-fit-modify | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | bn-fit-modify | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | break-filter-js-from-html | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | break-filter-js-from-html | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | break-filter-js-from-html | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | build-cython-ext | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | build-cython-ext | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | build-cython-ext | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | build-pov-ray | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | build-pov-ray | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | build-pov-ray | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | caffe-cifar-10 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | caffe-cifar-10 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | caffe-cifar-10 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | cancel-async-tasks | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | cancel-async-tasks | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | cancel-async-tasks | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | chess-best-move | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | chess-best-move | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | adaptive-rejection-sampler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | adaptive-rejection-sampler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | adaptive-rejection-sampler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | bn-fit-modify | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | bn-fit-modify | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | bn-fit-modify | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | break-filter-js-from-html | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 1.0 | 681496 | 636591 | 39599 | 1357686 | 0.953340 |  |
+| completed | break-filter-js-from-html | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 1.0 | 289707 | 259232 | 26180 | 575119 | 0.584741 |  |
+| completed | break-filter-js-from-html | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 1.0 | 361490 | 332230 | 366 | 694086 | 0.938723 |  |
+| completed | build-cython-ext | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 0.0 | 1090065 | 1049796 | 12364 | 2152225 | 0.648481 |  |
+| completed | build-cython-ext | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 0.0 | 2130265 | 2074937 | 16605 | 4221807 | 1.074388 |  |
+| completed | build-cython-ext | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 0.0 | 2138615 | 2092406 | 2276 | 4233297 | 1.776407 |  |
+| completed | build-pov-ray | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 0.0 | 2745127 | 2693169 | 22111 | 5460407 | 1.334259 |  |
+| completed | build-pov-ray | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 1.0 | 1683265 | 1635208 | 19552 | 3338025 | 0.964001 |  |
+| completed | build-pov-ray | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 1.0 | 278638 | 263291 | 789 | 542718 | 0.368392 |  |
+| running | caffe-cifar-10 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
+| running | caffe-cifar-10 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
+| running | caffe-cifar-10 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | cancel-async-tasks | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 1.0 | 29056 | 23080 | 5218 | 57354 | 0.107600 |  |
+| completed | cancel-async-tasks | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 0.0 | 13969 | 10890 | 2734 | 27593 | 0.055819 |  |
+| completed | cancel-async-tasks | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 0.0 | 42956 | 39289 | 98 | 82343 | 0.127433 |  |
+| running | chess-best-move | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
+| running | chess-best-move | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
 | queued | chess-best-move | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
 | queued | circuit-fibsqrt | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
 | queued | circuit-fibsqrt | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |

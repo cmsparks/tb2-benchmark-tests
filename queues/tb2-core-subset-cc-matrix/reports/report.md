@@ -5,22 +5,22 @@ Dataset: `/root/tb2-claude-bench/data/terminal-bench-2`
 
 # TB2 Queue Summary
 
-Updated: `2026-05-22T19:34:00+00:00`
+Updated: `2026-05-22T20:08:23+00:00`
 
 | Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 59/84 | 29 | 30 | 0.492 | 1562 | 75303934 | 909841 | 76215337 | 28.967165 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 59/84 | 30 | 29 | 0.508 | 118259912 | 115362101 | 1046288 | 234668301 | 44.730212 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 59/84 | 32 | 27 | 0.542 | 74479715 | 71446996 | 151316 | 146078027 | 33.231406 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 59/84 | 24 | 35 | 0.407 | 89764775 | 83754116 | 729647 | 174248538 | 45.428864 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 59/84 | 26 | 33 | 0.441 | 41831593 | 38561505 | 38978 | 80432076 | 48.298200 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 59/84 | 28 | 31 | 0.475 | 50206164 | 46861414 | 43320 | 97110898 | 53.032770 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 59/84 | 21 | 38 | 0.356 | 40795576 | 38341783 | 1879230 | 81016589 | 31.686119 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 58/84 | 30 | 28 | 0.517 | 38716572 | 36096540 | 1823646 | 76636758 | 23.729957 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 58/84 | 28 | 30 | 0.483 | 38684716 | 36355605 | 1694594 | 76734915 | 28.847999 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 58/84 | 28 | 30 | 0.483 | 44254959 | 41472283 | 1873121 | 87600363 | 25.473490 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 58/84 | 27 | 31 | 0.466 | 35116739 | 33114133 | 1516419 | 69747291 | 25.626855 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 58/84 | 28 | 30 | 0.483 | 36265285 | 33370302 | 1981519 | 71617106 | 23.825561 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 65/84 | 31 | 34 | 0.477 | 1588 | 75714071 | 912539 | 76628198 | 29.313121 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 65/84 | 32 | 33 | 0.492 | 118943249 | 115992126 | 1052329 | 235987704 | 44.983659 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 65/84 | 34 | 31 | 0.523 | 75251000 | 72172941 | 153277 | 147577218 | 33.623635 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 65/84 | 27 | 38 | 0.415 | 91008960 | 84878039 | 735849 | 176622848 | 46.376713 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 64/84 | 29 | 35 | 0.453 | 43424086 | 40099189 | 41553 | 83564828 | 50.003634 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 64/84 | 30 | 34 | 0.469 | 50688624 | 47312557 | 44690 | 98045871 | 53.905709 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 64/84 | 24 | 40 | 0.375 | 41365933 | 38880953 | 1890764 | 82137650 | 32.137807 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 64/84 | 33 | 31 | 0.516 | 39186943 | 36523510 | 1846167 | 77556620 | 24.358575 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 64/84 | 32 | 32 | 0.500 | 39718535 | 37338926 | 1715062 | 78772523 | 29.639343 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 64/84 | 32 | 32 | 0.500 | 44470118 | 41657151 | 1890410 | 88017679 | 25.901842 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 64/84 | 31 | 33 | 0.484 | 36036983 | 33979439 | 1540104 | 71556526 | 26.446474 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 64/84 | 31 | 33 | 0.484 | 36527893 | 33599435 | 2001533 | 72128861 | 24.319057 |
 
 ## Jobs
 
@@ -729,82 +729,82 @@ Updated: `2026-05-22T19:34:00+00:00`
 | completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 332326 | 301100 | 622 | 634048 | 0.523008 |  |
 | completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 1.0 | 87029 | 75362 | 137 | 162528 | 0.276010 |  |
 | completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 1.0 | 149745 | 135298 | 4987 | 290030 | 0.169565 |  |
-| running | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| running | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| running | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| running | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| running | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| running | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| running | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
-| queued | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
-| queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
+| completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 1.0 | 92589 | 77788 | 10377 | 180754 | 0.234489 |  |
+| completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 1.0 | 153851 | 138361 | 6233 | 298445 | 0.193085 |  |
+| completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 1.0 | 60737 | 49125 | 5996 | 115858 | 0.148215 |  |
+| completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 1.0 | 187662 | 164405 | 12045 | 364112 | 0.315974 |  |
+| completed | portfolio-optimization | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 1.0 | 58661 | 46643 | 6591 | 111895 | 0.156970 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 1.0 | 5 | 63887 | 515 | 64407 | 0.083386 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 1.0 | 56437 | 41924 | 445 | 98806 | 0.073672 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 1.0 | 91255 | 75463 | 246 | 166964 | 0.095654 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 1.0 | 117304 | 72993 | 114 | 190411 | 0.181902 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 206880 | 182377 | 350 | 389607 | 0.364835 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 1.0 | 56454 | 47215 | 263 | 103932 | 0.179594 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 1.0 | 104643 | 96199 | 3316 | 204158 | 0.110259 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 1.0 | 39547 | 31918 | 2648 | 74113 | 0.077899 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 1.0 | 103018 | 95065 | 2913 | 200996 | 0.102033 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 1.0 | 26483 | 21553 | 4203 | 52239 | 0.087993 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 1.0 | 96975 | 87978 | 3705 | 188658 | 0.115703 |  |
+| completed | prove-plus-comm | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 1.0 | 21009 | 17301 | 2784 | 41094 | 0.060850 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 1.0 | 18 | 301689 | 1767 | 303474 | 0.185776 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 1.0 | 272018 | 253694 | 2331 | 528043 | 0.179775 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 1.0 | 192664 | 174732 | 679 | 368075 |  |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 1.0 | 384282 | 336622 | 1085 | 721989 | 0.308953 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 607993 | 596705 | 1353 | 1206051 | 0.502466 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 1.0 | 168062 | 160656 | 598 | 329316 | 0.233034 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 1.0 | 190724 | 182127 | 1647 | 374498 | 0.111573 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 1.0 | 177361 | 170285 | 3347 | 350993 | 0.127808 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 1.0 | 252681 | 243287 | 2116 | 498084 | 0.139942 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 1.0 | 77741 | 70844 | 2806 | 151391 | 0.089194 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 1.0 | 272618 | 263044 | 2072 | 537734 | 0.145884 |  |
+| completed | pypi-server | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 1.0 | 58806 | 52215 | 2750 | 113771 | 0.081620 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 | 3 | 44561 | 416 | 44980 | 0.076794 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 | 354882 | 334407 | 3265 | 692554 |  |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 | 487366 | 475750 | 1036 | 964152 | 0.296576 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 1.0 | 742599 | 714308 | 5003 | 1461910 | 0.456994 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 1.0 | 777620 | 758602 | 872 | 1537094 | 0.838134 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 | 257944 | 243272 | 509 | 501725 | 0.460311 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 1.0 | 274990 | 260844 | 6571 | 542405 | 0.229855 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 | 160874 | 146979 | 6149 | 314002 | 0.188421 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 1.0 | 524269 | 506608 | 9206 | 1040083 | 0.356283 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 1.0 | 50198 | 43346 | 4284 | 97828 | 0.102950 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 1.0 | 362989 | 349879 | 5863 | 718731 | 0.242058 |  |
+| completed | pytorch-model-cli | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 | 124132 | 112974 | 7889 | 244995 | 0.194055 |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 |  |  |  |  |  |  |
+| completed | pytorch-model-recovery | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-alpine-ssh | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 0.0 |  |  |  |  |  |  |
+| completed | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 0.0 |  |  |  |  |  |  |
+| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular |  |  |  |  |  |  |  |
+| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple |  |  |  |  |  |  |  |
+| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular |  |  |  |  |  |  |  |
+| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | simple |  |  |  |  |  |  |  |
+| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | regular |  |  |  |  |  |  |  |
+| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple |  |  |  |  |  |  |  |
+| running | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | regular |  |  |  |  |  |  |  |
 | queued | qemu-startup | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple |  |  |  |  |  |  |  |
 | queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular |  |  |  |  |  |  |  |
 | queued | query-optimize | versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular |  |  |  |  |  |  |  |
