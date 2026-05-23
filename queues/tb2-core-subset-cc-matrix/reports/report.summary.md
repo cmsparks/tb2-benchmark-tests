@@ -1,13 +1,13 @@
 # TB2 Queue Summary
 
-Updated: `2026-05-22T23:32:15+00:00`
+Updated: `2026-05-22T23:59:34+00:00`
 
 | Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 72/84 | 32 | 40 | 0.444 | 1856 | 97352746 | 1133072 | 98487674 | 42.233661 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 72/84 | 34 | 38 | 0.472 | 146266582 | 142690040 | 1337115 | 290293737 | 49.716896 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 72/84 | 37 | 35 | 0.514 | 86355633 | 82718690 | 174011 | 169248334 | 42.014310 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 72/84 | 28 | 44 | 0.389 | 100578408 | 93682955 | 845220 | 195106583 | 53.177496 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 0.2.66 | regular | 73/84 | 33 | 40 | 0.452 | 1916 | 103069134 | 1168398 | 104239448 | 42.233661 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 1.0.0 | regular | 73/84 | 34 | 39 | 0.466 | 152960795 | 149204842 | 1432686 | 303598323 | 49.716896 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.0.0 | regular | 73/84 | 38 | 35 | 0.521 | 90211186 | 86511174 | 177541 | 176899901 | 42.014310 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.0 | regular | 73/84 | 29 | 44 | 0.397 | 105421125 | 98367856 | 871717 | 204660698 | 55.816979 |
 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | regular | 72/84 | 32 | 40 | 0.444 | 48255327 | 44564807 | 46317 | 92866451 | 55.646835 |
 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple | 72/84 | 33 | 39 | 0.458 | 54177854 | 50480639 | 48834 | 104707327 | 62.310181 |
 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.113 | regular | 72/84 | 26 | 46 | 0.361 | 44153817 | 41422344 | 2154711 | 87730872 | 37.996755 |

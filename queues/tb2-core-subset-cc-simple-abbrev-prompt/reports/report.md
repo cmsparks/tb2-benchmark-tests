@@ -5,13 +5,13 @@ Dataset: `/root/tb2-claude-bench/data/terminal-bench-2`
 
 # TB2 Queue Summary
 
-Updated: `2026-05-22T23:38:09+00:00`
+Updated: `2026-05-22T23:59:29+00:00`
 
 | Agent | Model | Version | Mode | Done | Passed | Failed | Accuracy | Input Tokens | Cache Tokens | Output Tokens | Total Tokens | Cost USD |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 35/84 | 15 | 20 | 0.429 | 20845390 | 19720485 | 19449 | 40585324 | 28.105902 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 36/84 | 17 | 19 | 0.472 | 21423131 | 20397865 | 1028654 | 42849650 | 12.603622 |
-| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 36/84 | 18 | 18 | 0.500 | 17505905 | 16366904 | 837392 | 34710201 | 12.063816 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 38/84 | 17 | 21 | 0.447 | 22555230 | 21355651 | 21946 | 43932827 | 30.748697 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 39/84 | 19 | 20 | 0.487 | 24766257 | 23602683 | 1141957 | 49510897 | 14.967681 |
+| versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 37/84 | 19 | 18 | 0.514 | 17680328 | 16526649 | 849989 | 35056966 | 12.355726 |
 
 ## Jobs
 
@@ -122,20 +122,20 @@ Updated: `2026-05-22T23:38:09+00:00`
 | completed | hf-model-inference | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 1.0 | 27434 | 24168 | 2212 | 53814 | 0.052671 |  |
 | completed | hf-model-inference | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 1.0 | 27063 | 23915 | 2157 | 53135 | 0.051328 |  |
 | completed | hf-model-inference | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 1.0 | 151373 | 144876 | 544 | 296793 | 0.267474 |  |
-| running | install-windows-3.11 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | install-windows-3.11 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 1.0 | 2667290 | 2604419 | 38271 | 5309980 | 1.591089 |  |
 | running | install-windows-3.11 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| running | install-windows-3.11 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | install-windows-3.11 | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 1.0 | 1143790 | 1106866 | 1817 | 2252473 | 1.275542 |  |
 | completed | kv-store-grpc | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 0.0 | 55577 | 51608 | 2373 | 109558 | 0.065951 |  |
 | completed | kv-store-grpc | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 1.0 | 54830 | 49619 | 2545 | 106994 | 0.072593 |  |
-| running | kv-store-grpc | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| running | large-scale-text-editing | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | large-scale-text-editing | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | large-scale-text-editing | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | largest-eigenval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | largest-eigenval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | largest-eigenval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | llm-inference-batching-scheduler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
-| queued | llm-inference-batching-scheduler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
+| completed | kv-store-grpc | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 0.0 | 66774 | 63001 | 134 | 129909 | 0.130805 |  |
+| completed | large-scale-text-editing | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 1.0 | 419453 | 382120 | 34583 | 836156 | 0.772970 |  |
+| completed | large-scale-text-editing | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev | 1.0 | 174423 | 159745 | 12597 | 346765 | 0.291910 |  |
+| completed | large-scale-text-editing | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev | 1.0 | 499276 | 465299 | 546 | 965121 | 1.236448 |  |
+| completed | largest-eigenval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev | 0.0 | 256383 | 218279 | 40449 | 515111 |  |  |
+| running | largest-eigenval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
+| running | largest-eigenval | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
+| running | llm-inference-batching-scheduler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
+| running | llm-inference-batching-scheduler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
 | queued | llm-inference-batching-scheduler | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.48 | simple-abbrev |  |  |  |  |  |  |  |
 | queued | log-summary-date-ranges | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.116 | simple-abbrev |  |  |  |  |  |  |  |
 | queued | log-summary-date-ranges | versioned-claude-code | anthropic/claude-sonnet-4-6 | 2.1.145 | simple-abbrev |  |  |  |  |  |  |  |
